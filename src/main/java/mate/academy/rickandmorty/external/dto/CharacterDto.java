@@ -1,11 +1,11 @@
-package mate.academy.rickandmorty.dto.external.rickandmortyapi;
+package mate.academy.rickandmorty.external.dto;
 
 import java.net.URL;
 import java.time.Instant;
 import java.util.List;
 
 public record CharacterDto(
-        Integer id,
+        Long id,
         String name,
         String status,
         String species,
@@ -14,8 +14,8 @@ public record CharacterDto(
         LocationDto origin,
         LocationDto location,
         URL image,
-        List<URL> episode,
-        URL url,
+        List<String> episode,
+        String url,
         Instant created
 ) {
 }
